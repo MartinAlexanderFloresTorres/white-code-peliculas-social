@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+        />
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+        <title>White Code</title>
+    </head>
+    <body>
+        <!--===== header =====-->
+        <header class="menu">
+            <nav class="menu__contenedor max">
+                <div class="menu__left">
+                    <span class="ico menu__menuToggle" id="menu">
+                        <i class="bx bx-menu ico_i"></i>
+                    </span>
+                    <a href="/" title="White Code" class="menu__logo">
+                        <img
+                            class="menu__logoImg"
+                            src="images/logo.png"
+                            alt="logo"
+                        />
+                    </a>
+                </div>
+
+                <form method="" class="menu__buscador buscarPelicula">
+                    <span class="ico"><i class="bx bx-search"></i></span>
+                    <input
+                        class="menu__input"
+                        type="text"
+                        placeholder="Buscar..."
+                    />
+                    <button type="submit" class="boton">Go</button>
+                    <button
+                        type="reset"
+                        class="boton boton--gray"
+                        id="botonReset"
+                    >
+                        Reset
+                    </button>
+                </form>
+
+                <div class="menu__rigth">
+                    <button class="boton">Crear</button>
+                    <a
+                        href="https://web.facebook.com/garena.flores.9/"
+                        target="_blank"
+                        title="Ir a Facebook"
+                        ><img
+                            class="menu__user"
+                            src="images/user.jpg"
+                            alt="usuario"
+                    /></a>
+                </div>
+            </nav>
+        </header>
+
+        <!--===== main =====-->
+        <main class="contenido">
+            <section class="contenido__contenedor max">
+                <div class="asidebar" id="navegacion">
+                    <div class="asidebar__top">
+                        <a  title="Ir a facebook"
+                            href="https://web.facebook.com/garena.flores.9/"
+                            target="_blank"
+                            ><img
+                                class="asidebar__img"
+                                src="images/user.jpg"
+                                alt="user"
+                        /></a>
+                        <div class="asidebar__userTexto">
+                            <b>White Code</b>
+                            <a
+                                href="https://www.instagram.com/martin_flores_28/"
+                                target="_blank"
+                                title="Ir a instragram"
+                                class="asidebar__arr"
+                                >@WhiteCode</a
+                            >
+                        </div>
+                    </div>
+
+                    <div class="asidebar__menu">
+                        <a class="asidebar__item border active" href="#">
+                            <span class="asidebar__ico ico"
+                                ><i class="bx bx-home"></i
+                            ></span>
+                            <p class="asidebar__text">Inicio</p>
+                        </a>
+
+                        <a class="asidebar__item" href="#">
+                            <span class="asidebar__ico ico"
+                                ><i class="bx bx-compass"></i
+                            ></span>
+                            <p class="asidebar__text">Explorar</p>
+                        </a>
+
+                        <a
+                            class="asidebar__item"
+                            href="#"
+                            id="notificacion-toggle"
+                        >
+                            <span
+                                class="asidebar__ico asidebar__notificacion ico"
+                            >
+                                <i class="bx bxs-bell"></i>
+                                <span class="asidebar__notificacionCantidad"
+                                    >9+</span
+                                >
+                            </span>
+                            <p class="asidebar__text">Notificaciones</p>
+
+                            <div
+                                class="asidebar-notificacion"
+                                id="notificaciones-contenedor"
+                            >
+                                <div class="notificacion__contenedor">
+                                    <div>
+                                        <img
+                                            class="notificacion__img"
+                                            src="images/profile-2.jpg"
+                                            alt="profile"
+                                        />
+                                    </div>
+                                    <div>
+                                        <b>Alexa</b> aceptado tu Solicitud
+                                        <small class="notificacion__go"
+                                            >Hace 2 dias</small
+                                        >
+                                    </div>
+                                </div>
+                                <div class="notificacion__contenedor">
+                                    <div>
+                                        <img
+                                            class="notificacion__img"
+                                            src="images/profile-3.jpg"
+                                            alt="profile"
+                                        />
+                                    </div>
+                                    <div>
+                                        <b>Caren</b> aceptado tu Solicitud
+                                        <small class="notificacion__go"
+                                            >Hace 12 dias</small
+                                        >
+                                    </div>
+                                </div>
+                                <div class="notificacion__contenedor">
+                                    <div>
+                                        <img
+                                            class="notificacion__img"
+                                            src="images/profile-4.jpg"
+                                            alt="profile"
+                                        />
+                                    </div>
+                                    <div>
+                                        <b>Sofia</b> Le gusto tu publicacion
+                                        <small class="notificacion__go"
+                                            >Hace 5 dias</small
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="notificacion__contenedor">
+                                    <div>
+                                        <img
+                                            class="notificacion__img"
+                                            src="images/profile-5.jpg"
+                                            alt="profile"
+                                        />
+                                    </div>
+                                    <div>
+                                        <b>Alexa Diaz</b> te ah enviado
+                                        Solicitud
+                                        <small class="notificacion__go"
+                                            >Hace 1 dias</small
+                                        >
+                                    </div>
+                                </div>
+
+                                <div class="notificacion__contenedor">
+                                    <div>
+                                        <img
+                                            class="notificacion__img"
+                                            src="images/profile-6.jpg"
+                                            alt="profile"
+                                        />
+                                    </div>
+                                    <div>
+                                        <b>Gienella</b> ah visto tu historia
+                                        <small class="notificacion__go"
+                                            >Hace 3 dias</small
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="asidebar__item" href="#" id="mensaje">
+                            <span class="asidebar__ico asidebar__mensajes ico">
+                                <i class="bx bxs-message-detail"></i>
+                                <span class="asidebar__mensajesCantidad"
+                                    >6</span
+                                >
+                            </span>
+                            <p class="asidebar__text">Mensajes</p>
+                        </a>
+
+                        <a class="asidebar__item" href="#">
+                            <span class="asidebar__ico ico"
+                                ><i class="bx bx-bookmark"></i
+                            ></span>
+                            <p class="asidebar__text">Marcador</p>
+                        </a>
+
+                        <a class="asidebar__item" href="#">
+                            <span class="asidebar__ico ico"
+                                ><i class="bx bx-image-alt"></i
+                            ></span>
+                            <p class="asidebar__text">Imagenes</p>
+                        </a>
+
+                        <a class="asidebar__item" href="#" id="thema-toggle">
+                            <span class="asidebar__ico ico"
+                                ><i class="bx bx-palette"></i
+                            ></span>
+                            <p class="asidebar__text">Modo</p>
+                        </a>
+
+                        <a class="asidebar__item border" href="#">
+                            <span class="asidebar__ico ico"
+                                ><i class="bx bx-cog"></i
+                            ></span>
+                            <p class="asidebar__text">Configuraciones</p>
+                        </a>
+                    </div>
+                    <button class="boton boton--ancho">
+                        Crear Publicacion
+                    </button>
+                </div>
+
+                <div class="contenido__center">
+                    <!--===== historias =====-->
+                    <div class="historias">
+                        <div class="historias__contenedor">
+                            <div class="historia__bg">
+                                <div class="historias_item bg1">
+                                    <img
+                                        class="historias__img"
+                                        src="images/profile-1.jpg"
+                                        alt="historias"
+                                    />
+                                    <div class="historia__texto">
+                                        Alexa Diaz
+                                    </div>
+                                </div>
+                                <!-- fin -->
+                            </div>
+
+                            <div class="historia__bg">
+                                <div class="historias_item bg2">
+                                    <img
+                                        class="historias__img"
+                                        src="images/profile-2.jpg"
+                                        alt="historias"
+                                    />
+                                    <div class="historia__texto">Estrella</div>
+                                </div>
+                                <!-- fin -->
+                            </div>
+
+                            <div class="historia__bg">
+                                <div class="historias_item bg3">
+                                    <img
+                                        class="historias__img"
+                                        src="images/profile-3.jpg"
+                                        alt="historias"
+                                    />
+                                    <div class="historia__texto">
+                                        Sofia Reyes
+                                    </div>
+                                </div>
+                                <!-- fin -->
+                            </div>
+
+                            <div class="historia__bg">
+                                <div class="historias_item bg4">
+                                    <img
+                                        class="historias__img"
+                                        src="images/profile-4.jpg"
+                                        alt="historias"
+                                    />
+                                    <div class="historia__texto">Sofia</div>
+                                </div>
+                                <!-- fin -->
+                            </div>
+
+                            <div class="historia__bg">
+                                <div class="historias_item bg5">
+                                    <img
+                                        class="historias__img"
+                                        src="images/profile-5.jpg"
+                                        alt="historias"
+                                    />
+                                    <div class="historia__texto">
+                                        Alexa Diaz
+                                    </div>
+                                </div>
+                                <!-- fin -->
+                            </div>
+
+                            <div class="historia__bg">
+                                <div class="historias_item bg6">
+                                    <img
+                                        class="historias__img"
+                                        src="images/profile-6.jpg"
+                                        alt="historias"
+                                    />
+                                    <div class="historia__texto">Gienella</div>
+                                </div>
+                                <!-- fin -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--===== publicacion =====-->
+                    <div class="publicacion">
+                        <img
+                            class="publicacion__img"
+                            src="images/user.jpg"
+                            alt="usuario"
+                        />
+                        <input
+                            class="publicacion__input"
+                            type="text"
+                            placeholder="Que quieres publicar hoy..."
+                        />
+                        <button class="boton">Publicar</button>
+                    </div>
+
+                    <!--===== post =====-->
+                    <div>
+                        <div class="post">
+                            <!--===== se rellena con js =====-->
+                        </div>
+
+                        <div class="post__botones">
+                            <button class="boton boton--gray" id="anterior">
+                                Anterior
+                            </button>
+                            <button class="boton" id="siguiente">
+                                Ver Mas
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenido__rigth" id="mensajesContenedor">
+                    <div class="mensaje">
+                        <div class="mensaje__top">
+                            <p class="mensaje__text">Mensajes</p>
+                            <div class="mensaje__toggles">
+                                <span class="ico">
+                                    <i class="bx bx-message-square-edit"></i>
+                                </span>
+                                <span
+                                    class="mensaje__close ico"
+                                    id="close-mensajes"
+                                >
+                                    <i class="bx bx-x ico_i"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="mensaje__buscador">
+                            <span class="ico">
+                                <i class="bx bx-search"></i>
+                            </span>
+                            <input
+                                class="mensaje__input"
+                                type="text"
+                                placeholder="Buscar mensajes"
+                            />
+                        </div>
+
+                        <div class="mensaje__titles">
+                            <h3 class="mensaje__title active">Principal</h3>
+                            <h3 class="mensaje__title">General</h3>
+                            <h3 class="mensaje__title color">Respuestas(7)</h3>
+                        </div>
+
+                        <div class="mensaje__contenido">
+                            <div class="mensaje__respuestas">
+                                <img
+                                    class="mensaje__img"
+                                    src="images/profile-4.jpg"
+                                    alt="profile"
+                                />
+                                <div>
+                                    <b>Sofia</b>
+                                    <p class="mensaje__text active">
+                                        Hola, como estas
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mensaje__respuestas">
+                                <img
+                                    class="mensaje__img"
+                                    src="images/profile-5.jpg"
+                                    alt="profile"
+                                />
+                                <div>
+                                    <b>Alexa Diaz</b>
+                                    <p class="mensaje__text">
+                                        No te preocupes....
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mensaje__respuestas">
+                                <img
+                                    class="mensaje__img"
+                                    src="images/profile-6.jpg"
+                                    alt="profile"
+                                />
+                                <div>
+                                    <b>Gienella</b>
+                                    <p class="mensaje__text">Como te va?</p>
+                                </div>
+                            </div>
+
+                            <div class="mensaje__respuestas">
+                                <img
+                                    class="mensaje__img"
+                                    src="images/profile-8.jpg"
+                                    alt="profile"
+                                />
+                                <div>
+                                    <b>Santos Santos</b>
+                                    <p class="mensaje__text">Ok</p>
+                                </div>
+                            </div>
+
+                            <div class="mensaje__respuestas">
+                                <img
+                                    class="mensaje__img"
+                                    src="images/profile-16.jpg"
+                                    alt="profile"
+                                />
+                                <div>
+                                    <b>Ldnix</b>
+                                    <p class="mensaje__text active">
+                                        Gracias tu tambien...
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="mensaje__respuestas">
+                                <img
+                                    class="mensaje__img"
+                                    src="images/profile-11.jpg"
+                                    alt="profile"
+                                />
+                                <div>
+                                    <b>Ricardo mendoza</b>
+                                    <p class="mensaje__text">Eh, feliz dia</p>
+                                </div>
+                            </div>
+
+                            <div class="mensaje__respuestas">
+                                <img
+                                    class="mensaje__img"
+                                    src="images/profile-12.jpg"
+                                    alt="profile"
+                                />
+                                <div>
+                                    <b>Melisa Paz</b>
+                                    <p class="mensaje__text">Justo te llame</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="sugerencias__title">Solicitudes</h3>
+                    <div class="sugerencias">
+                        <div class="sugerencias__contenedor">
+                            <div class="mensaje__respuestas">
+                                <img
+                                    class="mensaje__img"
+                                    src="images/profile-17.jpg"
+                                    alt="profile"
+                                />
+                                <div>
+                                    <b>Alexandra Diaz</b>
+                                    <p class="mensaje__text active">
+                                        3 amigos en comun
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sugerencias__botones">
+                                <button class="boton">Aceptar</button>
+                                <button class="boton boton--gray">
+                                    Eliminar
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="sugerencias__contenedor">
+                            <div class="mensaje__respuestas">
+                                <img
+                                    class="mensaje__img"
+                                    src="images/profile-14.jpg"
+                                    alt="profile"
+                                />
+                                <div>
+                                    <b>Sebastian</b>
+                                    <p class="mensaje__text active">
+                                        5 amigos en comun
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sugerencias__botones">
+                                <button class="boton">Aceptar</button>
+                                <button class="boton boton--gray">
+                                    Eliminar
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="sugerencias__contenedor">
+                            <div class="mensaje__respuestas">
+                                <img
+                                    class="mensaje__img"
+                                    src="images/profile-15.jpg"
+                                    alt="profile"
+                                />
+                                <div>
+                                    <b>Alexander</b>
+                                    <p class="mensaje__text active">
+                                        1 amigos en comun
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sugerencias__botones">
+                                <button class="boton">Aceptar</button>
+                                <button class="boton boton--gray">
+                                    Eliminar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--===== theme =====-->
+        <section class="tema" id="tema-modo">
+            <div class="tema__contenedor">
+                <div class="tema__top">
+                    <h2 class="tema__title">Configuracion de thema</h2>
+                    <p class="tema__texto">
+                        Lorem ipsum dolor sit amet consectetur.
+                    </p>
+                </div>
+
+                <div>
+                    <b>Font size</b>
+                    <div class="tema__font">
+                        <p class="tema__min">Aa</p>
+                        <div class="tema__fontContent">
+                            <span class="fontSpan font-size-1"></span>
+                            <span class="fontSpan font-size-2 active"></span>
+                            <span class="fontSpan font-size-3"></span>
+                            <span class="fontSpan font-size-4"></span>
+                            <span class="fontSpan font-size-5"></span>
+                        </div>
+                        <p class="tema_max">Aa</p>
+                    </div>
+                </div>
+
+                <div>
+                    <b>Color</b>
+                    <div class="tema__color">
+                        <span class="tema__colorSpan active temaColor-1"></span>
+                        <span class="tema__colorSpan temaColor-2"></span>
+                        <span class="tema__colorSpan temaColor-3"></span>
+                        <span class="tema__colorSpan temaColor-4"></span>
+                        <span class="tema__colorSpan temaColor-5"></span>
+                    </div>
+                </div>
+
+                <div>
+                    <b>Background</b>
+                    <div class="tema__background">
+                        <div class="tema__bg bg1">
+                            <span class="tema__bgSpan"></span>
+                            <p class="tema__bgText">White</p>
+                        </div>
+
+                        <div class="tema__bg bg2">
+                            <span class="tema__bgSpan"></span>
+                            <p class="tema__bgText">Dark</p>
+                        </div>
+
+                        <div class="tema__bg bg3">
+                            <span class="tema__bgSpan"></span>
+                            <p class="tema__bgText">Black</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="index.js"></script>
+        <script src="eventos.js"></script>
+    </body>
+</html>
